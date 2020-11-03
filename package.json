@@ -8,8 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@apollo/client": "^3.2.5",
+    "@nexus/schema": "^0.17.0",
+    "@types/react": "^16.9.55",
+    "apollo-server-micro": "^2.18.2",
+    "date-fns": "^2.16.1",
+    "graphql": "^15.4.0",
+    "graphql-scalars": "^1.4.1",
+    "micro": "^9.3.4",
     "next": "10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-syntax-highlighter": "^15.3.0",
+    "typescript": "^4.0.5"
   }
 }
