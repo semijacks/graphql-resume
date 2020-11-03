@@ -3,7 +3,7 @@ import { useQuery, gql } from "@apollo/client";
 import { format } from "date-fns";
 import { print } from "graphql/language/printer";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import prismStyle from "react-syntax-highlighter/dist/esm/styles/prism/material-dark";
+import { funky } from "react-syntax-highlighter/dist/cjs/styles/prism/";
 import styles from "../styles/Home.module.css";
 
 const ResumeQuery = gql`
@@ -86,7 +86,7 @@ export default function Home() {
               {bio.linkedin.replace("https://", "")}
             </a>
           </p>
-          <SyntaxHighlighter language="graphql" style={prismStyle}>
+          <SyntaxHighlighter language="graphql" style={funky}>
             {print(ResumeQuery)}
           </SyntaxHighlighter>
         </div>
