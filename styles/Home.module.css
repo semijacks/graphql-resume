@@ -12,16 +12,25 @@
 
 .split {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 1rem;
 }
 
-.left {
-  width: 25%;
+@media only screen and (min-width: 600px) {
+  .split {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
-.left > pre {
-  width: 90%;
+.left {
+  width: 99%;
+}
+
+@media only screen and (min-width: 600px) {
+  .left {
+    width: 25%;
+  }
 }
 
 .left a {
@@ -29,7 +38,13 @@
 }
 
 .right {
-  width: 75%;
+  width: 99%;
+}
+
+@media only screen and (min-width: 600px) {
+  .right {
+    width: 75%;
+  }
 }
 
 .header h1,
